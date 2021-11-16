@@ -1,0 +1,4 @@
+python3.6
+anaconda3
+pytorch=1.7
+scikit-learn=0.19
