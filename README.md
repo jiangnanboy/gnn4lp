@@ -88,7 +88,7 @@ b.不带节点特征数据集如【data/yeast】
     ```
   
 ## Dataset
-   #####a. yeast dataset，【data/yeast】
+   ##### a. yeast dataset，【data/yeast】
    数据来自酵母蛋白质相互作用[yeast](http://snap.stanford.edu/deepnetbio-ismb/ipynb/yeast.edgelist) 。
    数据集的格式如下，具体可见[data](data/yeast/yeast.edgelist)。
    ```
@@ -98,7 +98,7 @@ b.不带节点特征数据集如【data/yeast】
     YOR123C	YLR418C
     ......         ......
    ```
-   #####b. cora dataset，【data/cora】
+   ##### b. cora dataset，【data/cora】
    数据来自Machine Learning Paper的数据集[cora](https://linqs.soe.ucsc.edu/data) 。
    数据集的格式如下，具体可见[data](https://linqs-data.soe.ucsc.edu/public/lbc/cora.tgz) 。
    
