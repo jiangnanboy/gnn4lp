@@ -33,6 +33,8 @@ b.不带节点特征数据集如【data/yeast】
 * 5.NHGATModelVAE(src/graph_nheads_att_gae)：基于图多头注意力的图卷积自编码和变分图卷积自编码(config中可配置使用自编码或变分自编码)，利用gae/vgae作为编码器，InnerProductDecoder作解码器。此方法是在【3】方法的基础上将图注意力层改为多头注意力层。
 * 6.NHGATModelGAN(src/graph_nheads_att_gan)：基于图多头注意力的对抗正则化图自编码，利用gae/vgae作为生成器；一个三层前馈网络作判别器，此方法在【4】方法的基础上将图注意力层改为多头注意力层。
 
+* Note:程序【src/util/cora_class_one_hot_process.py】将cora数据集中cora.content中的节点label进行one-hot编码（处理后的数据集为：data/cora/cora.content_class），将其与features一起作为训练特征，这就相当于实现了条件变分自编码【conditional variational auroencoder (CVAE)】，从而在encoder与decoder中加入了节点label的限制。
+
 #### Usage
 - 相关参数的配置config见每个模型文件夹中的config.cfg文件，训练和预测时会加载此文件。
 
